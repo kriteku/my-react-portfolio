@@ -1,0 +1,139 @@
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#skills-header {
+  font-weight: bold;
+  font-size: 5em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000,
+    -1px -1px #000, 1px -1px #000, -1px 1px #000;
+  margin-top: 1em;
+}
+
+#outer-carousel-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+#carousel {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  align-items: center;
+  width: 750px;
+  height: 502px;
+  border-radius: 6px;
+}
+
+#outer-carousel-div i {
+  font-size: 2em;
+  color: white;
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000,
+    -1px -1px #000, 1px -1px #000, -1px 1px #000;
+  cursor: pointer;
+}
+
+.skill-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 750px;
+  background-color: #06d6a0;
+  height: 500px;
+}
+
+.skills-div {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin: 3em 0em;
+}
+
+.skill-cards-header {
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+}
+
+.skill-img {
+  height: 80px;
+  margin-bottom: 1em;
+}
+
+.skill-text {
+  text-align: center;
+  font-size: 1.05em;
+  color: black;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@media screen and (max-width: 981px) {
+  #skills {
+    width: 100vw;
+  }
+
+  #skills-header {
+    font-size: 2.5em;
+  }
+
+  #carousel {
+    width: 310px;
+    height: 800.5px;
+  }
+
+  .skill-card {
+    width: 80px;
+  }
+
+  .skill-cards {
+    min-width: 310px;
+    height: 800px;
+  }
+
+  .skill-text {
+    font-size: 1em;
+  }
+
+  .skill-cards-header {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 981px) and (orientation: landscape) {
+  #carousel {
+    height: 500px;
+    width: 550px;
+  }
+
+  .skill-cards {
+    min-width: 550px;
+    height: 500px;
+  }
+}

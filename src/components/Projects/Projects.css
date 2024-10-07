@@ -1,0 +1,122 @@
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects-header {
+  font-size: 5em;
+  color: white;
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000,
+    -1px -1px #000, 1px -1px #000, -1px 1px #000;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#project-cards-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.project-card {
+  width: 500px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+  text-align: center;
+  color: black;
+  background-color: white;
+  font-weight: 500;
+  font-size: 1em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-radius: 6px;
+  border: 2px solid black;
+}
+
+.project-img {
+  max-width: 100%;
+  height: 300px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.project-link {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  margin: 1em 0em;
+  border-radius: 3px;
+}
+
+.project-text-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+.project-header {
+  font-size: 1.3em;
+  margin: 0.5em 0em;
+  font-weight: bold;
+}
+
+.tech-used-header {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.project-text,
+.tech-used-text {
+  font-weight: normal;
+  font-size: 1.05em;
+}
+
+@media screen and (max-width: 981px) {
+  #projects {
+    width: 100vw;
+  }
+
+  #projects-header {
+    font-size: 2.5em;
+  }
+
+  #project-cards-div {
+    width: 90%;
+  }
+
+  .project-img {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .project-header,
+  .tech-used-header {
+    font-size: 1.2em;
+  }
+
+  .project-text-div {
+    font-size: 1em;
+  }
+
+  .project-card {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 981px) and (orientation: landscape) {
+  .project-card {
+    width: 91%;
+  }
+}

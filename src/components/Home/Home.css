@@ -1,0 +1,142 @@
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: -8px;
+  height: 100vh;
+}
+
+#text-div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: left;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: black;
+  font-weight: bold;
+  margin: 10px;
+  width: 60%;
+}
+
+#text-header {
+  font-weight: bold;
+  font-size: 5em;
+  margin: 0em 0em;
+  color: white;
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000,
+    -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+#text-paragraph {
+  font-size: 1.05em;
+  line-height: 1.65em;
+  margin-left: 5px;
+}
+
+#text-icons {
+  margin-left: 5px;
+  margin-bottom: 25px;
+}
+
+#text-icons a {
+  color: black;
+}
+
+#text-icons i {
+  margin-right: 1em;
+  font-size: 1.5em;
+}
+
+#text-icons i:hover {
+  cursor: pointer;
+}
+
+#jumbotron {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 80%;
+}
+
+#profile-img {
+  width: 45%;
+  background-image: radial-gradient(
+    rgba(142, 202, 230, 0.5),
+    rgba(142, 202, 230, 0),
+    rgba(142, 202, 230, 0)
+  );
+}
+
+#scroll-down-text {
+  color: #8ecae6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1em;
+  margin-right: 0.5em;
+}
+
+#scroll-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+}
+
+@media screen and (max-width: 981px) {
+  #home {
+    width: 100vw;
+    margin: 0px;
+  }
+
+  #jumbotron {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+
+  #profile-img {
+    width: 75%;
+  }
+
+  #text-header {
+    font-size: 2.5em;
+    margin: 0px;
+    width: 100%;
+  }
+
+  #text-div {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+  }
+
+  #text-paragraph {
+    font-size: 0.8em;
+    margin-left: 0px;
+  }
+
+  #text-icons {
+    margin-left: 0px;
+    margin: 1em 0em;
+  }
+
+  #text-icons i {
+    margin: 0em 0.6em;
+  }
+}
+
+@media screen and (max-width: 981px) and (orientation: landscape) {
+  #home {
+    height: 100%;
+  }
+
+  #profile-img {
+    width: 60%;
+    margin-top: 3em;
+  }
+}

@@ -1,0 +1,39 @@
+#nav-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border: 2px solid black;
+  border-radius: 80px;
+  /* background-color: #06d6a0; */
+  background-color: white;
+  margin: 1em auto;
+  z-index: 2;
+}
+
+#links-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  text-decoration: none;
+  color: #8ecae6;
+  font-size: 1.5em;
+  margin: 0.5em 1em;
+  transition: 0.5s;
+  color: black;
+}
+
+@media screen and (max-width: 981px) {
+  .links {
+    font-size: 1.2em;
+  }
+}
